@@ -1,0 +1,19 @@
+{
+  "name": "backend-learning-project",
+  "version": "1.0.0",
+  "description": "Learn backend development by building a real Node.js Task Manager API",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "nodejs",
+    "backend",
+    "learn-by-doing"
+  ],
+  "author": "",
+  "license": "MIT"
+}

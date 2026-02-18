@@ -1,0 +1,142 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Length 1862 >>
+stream
+BT
+/F1 11 Tf
+14 TL
+72 800 Td
+(# Backend Concepts Guide \(Project Walkthrough\)) Tj
+T*
+( ) Tj
+T*
+(## 1\) What is Backend Development?) Tj
+T*
+(Backend handles:) Tj
+T*
+(- Business logic \(rules\)) Tj
+T*
+(- Data storage/retrieval) Tj
+T*
+(- Authentication/authorization) Tj
+T*
+(- API contracts for frontend/mobile clients) Tj
+T*
+( ) Tj
+T*
+(You can think of backend as "the brain + memory" of an application.) Tj
+T*
+( ) Tj
+T*
+(---) Tj
+T*
+( ) Tj
+T*
+(## 2\) Project Architecture Used Here) Tj
+T*
+( ) Tj
+T*
+(We use a layered pattern:) Tj
+T*
+( ) Tj
+T*
+(1. **Routes**: URL + HTTP method mapping) Tj
+T*
+(2. **Controllers**: HTTP-level handling \(`req`, `res`\)) Tj
+T*
+(3. **Services**: Business rules and workflows) Tj
+T*
+(4. **Repositories**: Data access and persistence details) Tj
+T*
+( ) Tj
+T*
+(Why this matters:) Tj
+T*
+(- Easier to read and maintain) Tj
+T*
+(- Easier to test) Tj
+T*
+(- Easier to swap tools \(e.g. file DB -> PostgreSQL\)) Tj
+T*
+( ) Tj
+T*
+(Alternative options:) Tj
+T*
+(- MVC-only style \(simpler, but can become messy as project grows\)) Tj
+T*
+(- Clean Architecture / Hexagonal \(more scalable but more complex\)) Tj
+T*
+( ) Tj
+T*
+(---) Tj
+T*
+( ) Tj
+T*
+(## 3\) Authentication \(Signed Token\)) Tj
+T*
+( ) Tj
+T*
+(Flow:) Tj
+T*
+(1. User logs in with email/password.) Tj
+T*
+(2. Backend verifies credentials.) Tj
+T*
+(3. Backend returns signed token.) Tj
+T*
+(4. Client sends token in `Authorization` header.) Tj
+T*
+(5. Backend verifies token before protected routes.) Tj
+T*
+( ) Tj
+T*
+(Why signed token?) Tj
+T*
+(- Stateless) Tj
+T*
+(- Common pattern across frontend/mobile/microservices) Tj
+T*
+( ) Tj
+T*
+(Other options:) Tj
+T*
+(- Server sessions + cookies) Tj
+T*
+(- OAuth \(Google/GitHub login\)) Tj
+T*
+( ) Tj
+T*
+(When to use:) Tj
+T*
+(- Token-based auth is great for API-based apps.) Tj
+T*
+(- Session cookies are good for traditional server-rendered apps.) Tj
+T*
+ET
+endstream
+endobj
+3 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
+endobj
+4 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+5 0 obj
+<< /Type /Catalog /Pages 4 0 R >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000079 00000 n 
+0000001993 00000 n 
+0000002119 00000 n 
+0000002176 00000 n 
+trailer
+<< /Size 6 /Root 5 0 R >>
+startxref
+2225
+%%EOF
